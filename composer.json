@@ -8,6 +8,7 @@
         "ecommerce",
         "mpesa",
         "kenya",
+        "tanzania",
         "east-africa",
         "opensource"
     ],
@@ -31,23 +32,16 @@
         "php": "^8.1",
         "webkul/bagisto": "^2.3"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/webkul/bagisto"
-        }
-    ],
     "autoload": {
         "psr-4": {
-            "Webkul\\Mpesa\\": "src"
+            "Webkul\\Mpesa\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Webkul\\Mpesa\\Providers\\MpesaServiceProvider"
-            ],
-            "aliases": {}
+            ]
         }
     },
     "scripts": {
