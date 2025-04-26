@@ -1,10 +1,3 @@
-Of course!  
-Here’s everything **already combined** in **one single document**, clean and easy to **copy-paste**:
-
----
-
-# 📄 Full `README.md`
-
 ```markdown
 # MPesa Payment Gateway for Bagisto
 
@@ -104,8 +97,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🌍 Support
 
 If you encounter any issues, please [open an issue](https://github.com/GODFREY-EM/mpesa-payment-gateway-for-bagisto/issues).
-
----
-
-> Proudly built to empower East African businesses through technology 🌍✨
-```
