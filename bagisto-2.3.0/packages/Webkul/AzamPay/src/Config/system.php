@@ -1,0 +1,88 @@
+<?php
+
+return [
+    [
+        'key'    => 'sales.payment_methods.azampay',
+        'name'   => 'azampay',
+        'info'   => 'Azampay Payment Gateway Configuration',
+        'sort'   => 0,
+        'fields' => [
+            [
+                'name'          => 'title',
+                'title'         => 'Azampay Title',
+                'type'          => 'text',
+                'validation'    => 'required_if:active,1',
+                'depend'        => 'active:1',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'description',
+                'title'         => 'Azampay Description',
+                'type'          => 'textarea',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'image',
+                'title'         => 'Azampay Logo',
+                'info'          => 'Upload a logo for Azampay payment method.',
+                'type'          => 'image',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'azampay_client_id',
+                'title'         => 'Azampay Client ID',
+                'info'          => 'Enter the Client ID provided by Azampay.',
+                'type'          => 'text',
+                'validation'    => 'required_if:active,1',
+                'depend'        => 'active:1',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'azampay_api_key',
+                'title'         => 'Azampay Client Secret',
+                'info'          => 'Enter the API Key or Client Secret from Azampay.',
+                'type'          => 'password',
+                'validation'    => 'required_if:active,1',
+                'depend'        => 'active:1',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],[
+                'name'          => 'azampay_token',
+                'title'         => 'Azampay Token',
+                'info'          => 'Paste your Azampay Bearer Token or set via .env file',
+                'type'          => 'text',
+                'validation'    => 'required_if:active,1',
+                'depend'        => 'active:1',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],[
+                'name'          => 'azampay_currencies',
+                'title'         => 'Accepted Currencies',
+                'type'          => 'text',
+                'info'          => 'Add currency codes, comma separated (e.g., USD, TZS)',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'active',
+                'title'         => 'Status',
+                'type'          => 'boolean',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'sandbox',
+                'title'         => 'Sandbox Mode',
+                'type'          => 'boolean',
+                'info'          => 'Enable sandbox mode for testing transactions',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'sort',
+                'title'         => 'Sort Order',
+                'type'          => 'text',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+        ],
+    ],
+];
